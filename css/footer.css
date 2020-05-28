@@ -1,0 +1,106 @@
+.footer-container {
+    background-color: rgb(48, 85, 137);
+    color: white;
+}
+.p-accordion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.p-accordion h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 3rem;
+    width: 100%;
+}
+.p-accordion input[type="checkbox"] {
+    display: none;
+}
+.p-accordion label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    line-height: 3rem;
+
+    margin: 0 0 1px 0;
+}
+
+.p-accordion label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -0.2rem;
+    bottom: 0;
+    display: block;
+    width: 280px;
+    height: 3rem;
+    line-height: 3rem;
+}
+.p-accordion input[type="checkbox"] + label::after {
+    content: "+";
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: right;
+}
+.p-accordion ul {
+    width: 100%;
+}
+.p-accordion li {
+    height: 0rem;
+    overflow-y: hidden;
+}
+.p-accordion a {
+    display: block;
+    line-height: 2rem;
+}
+.footer-icon {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+}
+.footer-links {
+    margin: 10px 0;
+    max-width: 1000px;
+}
+.footer-bottom li {
+    margin: 5px 0;
+    font-size: 0.7rem;
+}
+.footer-bottom a {
+    display: block;
+}
+.p-accordion input[type="checkbox"]:checked + label::after {
+    content: "×";
+}
+.p-accordion input[type="checkbox"]:checked ~ .accordion_items li,
+.p-accordion input[type="checkbox"]:checked ~ .accordion_items2 li {
+    height: 2rem;
+    line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+    .p-accordion li {
+        height: 2rem;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-bottom ul {
+        display: flex;
+        font-size: 0.7rem;
+    }
+    .footer-bottom li {
+        margin: 15px;
+    }
+    .p-accordion label::after {
+        display: none;
+    }
+    .p-accordion input[type="checkbox"] + label::after {
+        display: none;
+    }
+}

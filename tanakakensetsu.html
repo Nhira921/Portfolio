@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="ポートフォリオサイトです。Web制作、アプリ開発のご依頼はぜひおまかせください。
+        ">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/HNapple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/HNicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/HN16.ico">
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            rel="stylesheet"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+
+        <title>name's Portfolio||仮想企業サイト</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="header-container">
+                <img src="img/1483361553370.png" alt="トップ画像" />
+                <button class="menu" id="menu" aria-label="メニュー">
+                    <span id="menu-open">MENU</span>
+                    <span id="menu-close">CLOSE</span>
+                </button>
+            </div>
+            <!-- メニュー -->
+            <nav aria-label="メニュー">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#services">SERVICES</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="icon">
+                        <a href="https://github.com/Nhira921" target="/blank"
+                            ><i class="fab fa-github-square"></i
+                        ></a>
+                        <a href="contact.html"
+                            ><i class="far fa-envelope"></i
+                        ></a>
+                    </li>
+                    <li class="close-times" id="closeTimes">×</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="mt-3 card card-body p-4">
+                <h1>仮想企業サイト</h1>
+            </div>
+            <div class="works-preview-container">
+                <div class="works-top">
+                    <img
+                        src="img/田中建設ファーストビュー2.png"
+                        alt="仮想企業サイト"
+                    />
+                </div> <!-- works-top -->
+
+                    <article class="work-description">
+                    <ul>
+                        <ul>
+                            <h2>概要</h2>
+                            <li>
+                                <h3>制作物概要</h3>
+                                <p>
+                                    仮想建設会社のコーポレートサイト
+                                </p>
+                            </li>
+                            <li>
+                                <h3>作成経緯</h3>
+                                営業機会を作れるのではと、まずはポートフォリオを作成することにしました。<br />
+                                また、企業がおしらせを自由に更新できる機能もあったほうがいいと思い、WordPressを使用しました。
+                            </li>
+                            <li>
+                                <h3>使用言語・技術</h3>
+                                <p>
+                                    WordPress/AWS EC2/AWS Certificate Manager
+                                </p>
+                            </li>
+                            <li>
+                                <h3>制作期間</h3>
+                                <p>13ページ作成から公開まで30時間</p>
+                            </li>
+                            <li>
+                                <a
+                                    href="http://tanaka-kensetsu.work/"
+                                    target="_blank"
+                                    ><i class="fas fa-link"></i>株式会社田中建設</a
+                                >
+                            </li>
+                        </ul>
+                    <ul>
+                      <h3>制作準備</h3>
+                      <li>
+                          <h4>企業の設定</h4>
+                          <img
+                              src="img/s田中建設ペルソナ.jpg"
+                              alt="ペルソナの設定"
+                          />
+                      </li>
+                      <li>
+                          <h4>Webサイト目的</h4>
+                          ・どんな会社かを知ってもらう
+                      </li>
+                    </ul>
+                      <ul>
+                        <h3>
+                            制作のこだわり
+                        </h3>
+                        <li>
+                          ・ファーストビューに会社をアピールする写真をスライドさせて、一目でクライアントに情報を与えられる。
+                        </li>
+                        <li>
+                            ・事業内容をトップページの上部大半を閉めることにより
+                        </li>
+                        <li>
+                          ・社員の顔を出すことによりアットホームさを表現
+                        </li>
+                      </ul>
+                </article>
+                <!-- work-description -->
+            </div>
+            <!-- works-preview-container -->
+        </main>
+        <footer>
+            <section class="footer-container">
+                <ul class="footer-links">
+                    <li class="p-accordion">
+                        <h4
+                            role="button"
+                            onClick="accordionModule.toggleMenu('accordion-about')"
+                            class="lang-ja"
+                        >
+                            サイトマップ
+                        </h4>
+                        <h4
+                            role="button"
+                            onClick="accordionModule.toggleMenu('accordion-about')"
+                            class="lang-en invisible-en"
+                        >
+                            SITEMAP
+                        </h4>
+                        <input type="checkbox" id="accordion-about" />
+                        <label for="accordion-about"></label>
+                        <ul class="accordion_items">
+                            <li><a href="index.html">TOP</a></li>
+                            <li><a href="index.html#about">ABOUT</a></li>
+                            <li><a href="index.html#services">SERVICES</a></li>
+                            <li><a href="works.html">WORKS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </li>
+                    <li class="p-accordion">
+                        <h4
+                            role="button"
+                            onClick="accordionModule.toggleMenu('accordion-works')"
+                            class="lang-ja"
+                        >
+                            制作実績一覧
+                        </h4>
+                        <h4
+                            role="button"
+                            onClick="accordionModule.toggleMenu('accordion-works')"
+                            class="lang-en invisible-en"
+                        >
+                            WORKS
+                        </h4>
+                        <input type="checkbox" id="accordion-works" />
+                        <label for="accordion-works"></label>
+                        <ul class="accordion_items2">
+                            <a href="restaurant-suggest.html">
+                                <li class="lang-ja">今日のご飯診断</li>
+                                <li class="lang-en invisible-en">
+                                    What to Eat Today
+                                </li>
+                            </a>
+                            <a href="tanakakensetsu.html">
+                                <li class="lang-ja">仮想企業サイト</li>
+                                <li class="lang-en invisible-en">
+                                    Non-existent Construction Corporate Website
+                                </li>
+                            </a>
+                            <a href="portfolio.html">
+                                <li class="lang-ja">ポートフォリオサイト</li>
+                                <li class="lang-en invisible-en">
+                                    My Portfolio Site
+                                </li>
+                            </a>
+                            <a href="Wake-up-time-checker.html">
+                                <li class="lang-ja">適正起床時間チェッカー</li>
+                                <li class="lang-en invisible-en">
+                                    Wake-up Time Checker
+                                </li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="icon footer-icon">
+                        <a href="https://github.com/Nhira921" target="/blank"
+                            ><i class="fab fa-github-square"></i
+                        ></a>
+                        <a href="contact.html"
+                            ><i class="far fa-envelope"></i
+                        ></a>
+                    </li>
+                </ul>
+                <div class="footer-bottom">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="privacypolicy.html" class="lang-ja">プライバシーポリシー</a>
+                            <a href="privacypolicy.html" class="lang-en invisible-en"
+                                >Privacy policy</a
+                            >
+                        </li>
+                        <li>@ 2020 name</li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+
+        <script src="js/menu.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/language.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.14.5/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+    </body>
+</html>

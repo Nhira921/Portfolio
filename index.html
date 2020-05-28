@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオサイトです。Web制作、アプリ開発のご依頼はぜひおまかせください。
+    ">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/HNapple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/HNicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/HN16.ico">
+
+    <title>'s Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+
+            <!-- スクロールアニメーション -->
+            <div class="scroll">Scroll</div>
+            <!-- メニュ－ボタン -->
+            <button class="menu" id="menu" aria-label="メニュー">
+                <span id="menu-open">MENU</span>
+                <span id="menu-close">CLOSE</span>
+            </button>
+            <!-- メニューテーブル -->
+            <nav aria-label="メニュー">
+                <ul>
+                    <li> <button class="lang-btn" aria-label="Language Button" id="en-btn">
+                        <a ><i class="fas fa-globe-americas"></i>Eng</a>
+                    </button>
+                    <button class="lang-btn" aria-label="Language Button" id="ja-btn">
+                        <a ><i class="fas fa-globe-asia"></i>Jap</a>
+                    </button>
+                    </li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="icon">
+                        <a href="https://github.com/Nhira921" target="/blank"><i class="fab fa-github-square"></i></a>
+                        <a href="contact.html"><i class="far fa-envelope"></i></a>
+                    </li>
+                    <li class="close-times" id="closeTimes">×</li>
+                </ul>
+            </nav>
+            <!-- タイトル -->
+            <img src="img/1483361553370.png" alt="first-view">
+            <div class="title">
+                <h1>title</h1>
+                <!-- 翻訳ボタン -->
+
+            </div><!-- title -->
+            <div class="lang-en copy invisible-en">I'm a web engineer.<br>
+                Also I can design website.
+                Thank you for visiting this page it is my portfolio site.
+            </div>
+            <div class="lang-ja copy">ウェブデザイナー兼ウェブエンジニアのnameです。<br>
+                ご訪問ありがとうございます。
+            </div>
+
+    </header>
+    <!-- メイン -->
+    <main>
+        <div class="container">
+            <section class="about" id="about">
+                <h1>ABOUT</h1>
+                <article>
+                    <img src="img/me.jpg" alt="name">
+                    <div class="about-me">
+                        <h2 class="lang-ja">お客様とエンドユーザーにとっての最高を追及します。</h2>
+                        <h2 class="lang-en invisible-en">I create the best for clients and end users but not for myself.</h2>
+                        <p class="lang-ja"><strong>name</strong><br>
+                        自己紹介
+                        </p>
+                        <p class="lang-en invisible-en">自己紹介
+                        </p>
+                        <p class="lang-ja skills">
+                            経験言語・・・HTML/CSS/JavaScript/Java/Kotlin/PHP<br>
+                            ライブラリー・・・Jquery/React<br>
+                            ツール・・・WordPress/Photoshop/<br>/AWS/Firebase/Git/AndroidStudio<br>
+                            OS・・・Windows
+                        </p>
+                        <p class="lang-en invisible-en skills">
+                        Experienced Programming Languages - HTML/CSS/JavaScript/Java/Kotlin/Java/PHP<br>
+                        Libraries - Jquery/React<br>
+                        Tools - WordPress/Photoshop/<br>/AWS/Firebase/Git/AndroidStudio/Bootstrap<br>
+                        OS・・・Windows
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="hobbies-sec">
+                <h3 class="lang-ja">趣味</h3>
+                <h3 class="lang-en invisible-en">Hobbies</h3>
+                <div class="hobbies">
+                        <div class="hobby-container" data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <img src="img/音楽.jpg" alt="音楽">
+                            <p class="lang-ja">音楽鑑賞</p>
+                            <p class="lang-en invisible-en">Listening Music</p>
+                        </div>
+                        <div class="hobby-container" data-aos="fade-up-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <img src="img/design-interior.jpg" alt="インテリア">
+                        <p class="lang-ja">インテリアデザイン</p>
+                        <p class="lang-en invisible-en">Design Interior</p>
+                        </div>
+                        <div class="hobby-container" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <img src="img/キャンプ.png" alt="キャンプ">
+                        <p class="lang-ja">キャンプ</p>
+                        <p class="lang-en invisible-en">Camping</p>
+                        </div>
+                        <div class="hobby-container" data-aos="fade-up-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <img src="img/カーテン.png" alt="裁縫">
+                        <p class="lang-ja">裁縫</p>
+                        <p class="lang-en invisible-en">Sewing</p>
+                        </div>
+                </div>
+            </section>
+
+            <section class="services" id="services">
+                <h1>SERVICES</h1>
+                <div class="services-container">
+                    <article>
+                        <h2 class="lang-ja">ウェブサイト制作</h2>
+                        <h2 class="lang-en invisible-en">Creating Websites</h2>
+                        <img src="img/WEBサイトアイコン.png" alt="webサイト制作">
+                        <p class="lang-ja">
+                            企業サイト、店舗サイト、個人ポートフォリオ等、デザインのイメージ等をお聞きし、オリジナルのウェブサイトを作成いたします。
+                            バナー制作だけや、既存のウェブサイトのリニューアルのご依頼も大歓迎です。
+                        </p>
+                        <p class="lang-en invisible-en">
+                            I solution your web problems with Corporate websites,shops website and portfolio.<br>
+                            I welcome to creating banner ads or renewing your website.
+                        </p>
+
+                    </article>
+                    <article>
+                        <h2 class="lang-ja">LP制作</h2>
+                        <h2 class="lang-en invisible-en">creating Landing Pages</h2>
+                        <img src="img/文書ファイルのフリーアイコン.png" alt="LP制作">
+                        <p class="lang-ja">ランディングページ、キャンペーンページ等、パソコンやタブレット、スマートフォンで閲覧可能なレスポンシブ対応デザインで制作致します。</p>
+                        <p class="lang-en invisible-en">I create responsive landing pages and campaign pages.So users can enjoy your website on smartphone,tablet and PC.</p>
+                    </article>
+                    <article>
+                        <h2 class="lang-ja">アプリ開発</h2>
+                        <h2 class="lang-en invisible-en">Creating Apps</h2>
+                        <img src="img/ネットサーフィンアイコン2.png" alt="アプリ開発">
+                        <p class="lang-ja">
+                            お困りごとをヒアリングし、これまでより使いやすいアプリを提供いたします。リピーター獲得に有効なアプリが作成可能です。
+                        </p>
+                        <p class="lang-en invisible-en">
+                            Please tell me your problem to offer better apps to resolve your problem.
+                            I can make apps for you to get more regular customers.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section class="works" id="works">
+                <h1>WORKS</h1>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <article class="swiper-slide">
+                            <a href="#">
+                                <h2 class="lang-ja">今日のご飯診断</h2>
+                                <h2 class="lang-en invisible-en ">What to Eat Today</h2>
+                                <img src="img/restaurant-suggest .jpg" alt="今日の食事診断">
+                                <p class="lang-ja">Yes/No診断で気分にあった食事を提案するアプリです。<br>
+                                位置情報から近くのレストランを検索できます。<br>
+                                モバイルフレンドリーな開発を心がけました。
+                                </p>
+                                <p class="lang-en invisible-en">
+                                    This app show you what you should eat today using Yes/No test.<br>
+                                    Also you can search restaurant near you by your location info.<br>
+                                    I created it mobile-friendly.
+                                </p>
+                            </a>
+                        </article>
+                        <article class="swiper-slide swiper-item">
+                            <a href="#">
+                                <h2 class="lang-ja">仮想企業サイト</h2>
+                                <h2 class="lang-en invisible-en">Non-existent Construction Corporate Website </h2>
+                                <img src="img/田中建設.jpg" alt="株式会社田中建設">
+                                <p class="lang-ja">建設会社の仮想コーポレートサイトです。<br>
+                                WordPressで作成している為、企業の最新情報などお客様で簡単におしらせが更新できます。
+                                </p>
+                                <p class="lang-en invisible-en">This is a non-existent construction corporate website.
+                                I created it by WordPress.you can easily upload notifications.
+                                </p>
+                            </a>
+                        </article>
+                        <article class="swiper-slide swiper-item">
+                            <a href="#">
+                            <h2 class="lang-ja">ポートフォリオサイト</h2>
+                            <h2 class="lang-en invisible-en">My Portfolio Site</h2>
+                            <img src="img/ポートフォリオサイト.jpg" alt="ポートフォリオサイト">
+                            <p class="lang-ja">現在閲覧頂いている本ポートフォリオサイトです。<br>
+                                『閲覧者にとって知りたい情報をわかりやすく』を心がけて作成いたしました。
+                            </p>
+                            <p class="lang-en invisible-en">
+                                This is my portfolio what you see now.<br>
+                                I created it easy to find what visiters want to know.
+                            </p>
+                            </a>
+                        </article>
+                        <article class="swiper-slide swiper-item">
+                            <a href="#">
+                            <h2 class="lang-ja">適正起床時間チェッカー</h2>
+                            <h2 class="lang-en invisible-en">Wake-up Time Checker</h2>
+                            <img src="img/適正起床時間チェッカー.jpg" alt="適正起床時間チェッカー">
+                            <p class="lang-ja">現在時刻を取得し、適正起床時間を簡単に知ることができるアプリです。
+                            </p>
+                            <p class="lang-en invisible-en">You can know what time you should wake up by using this App.It uses your location time.
+                            </p>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <button aria-label="制作実績">
+                    <a href="works.html">
+                        VIEW MORE
+                    </a>
+                </button>
+            </section>
+            <section class="contact" id="contact">
+                <h1>CONTACT </h1>
+                <div class="contact-container">
+                    <h2 class="lang-ja">お仕事のご依頼・ご相談</h2>
+                    <h2 class="lang-en invisible-en">Requests</h2>
+                    <p class="lang-ja">ホームページ、LP、バナー作成、アプリ開発のお問い合わせはこちらから。<br>
+                    「ますは見積もりだけしたい。」や「どんなことができるのかだけ知りたい。」等ご注文を迷われている場合はお気軽になんでもご相談下さい。
+                    お客様のお力になれるよう親身にお聞きいたします。<br>
+                    <br>
+                    ※サービス詳細や制作実績は各ページをご参照ください。
+                    </p>
+                    <p class="lang-en invisible-en">Message me any requests.<br>
+                    Wanna know only approximate cost? Wanna know what I can do?
+                    I very welcome them!Don't hesitate to contact me!
+                    <br>
+                    if you want to know about my services and works before contact me,please check [View more] each sections.
+                    </p>
+                </div>
+                <button class="contact-btn" id="contact-btn">
+                    <a href="contact.html" class="lang-ja">
+                    お問い合わせ
+                    <a href="contact.html" class="lang-en invisible-en">
+                    CONATCT</a></button>
+                <a href="contact.html">
+                    <img src="birds animation\blue landed.png" alt="birds" class="pc blue1 contact-bird">
+                </a>
+                <a href="contact.html">
+                <img src="birds animation\blue landing.png" alt="birds" class="pc blue2 contact-bird">
+                </a>
+                <a href="contact.html">
+                    <img src="birds animation\brown landing.png" alt="birds" class="pc brown1 contact-bird">
+                </a>
+                <a href="contact.html">
+                    <img src="birds animation\brown leaving.png" alt="birds" class="pc brown2 contact-bird">
+                </a>
+                <a href="contact.html">
+                    <img src="birds animation\red ease.png" alt="birds" class="pc red1 contact-bird">
+                </a>
+                <a href="contact.html">
+                    <img src="birds animation\red flying.png" alt="birds" class="pc red2 contact-bird">
+                </a>
+                <a href="contact.html">
+                    <img src="birds animation\red flying.png" alt="birds" class="sp red3 contact-bird">
+                </a>
+                <a href="contact.html">
+                    <img src="birds animation\yelloew leaving.png" alt="birds" class="pc yellow1 contact-bird">
+                </a>
+                <a href="contact.html">
+                    <img src="birds animation\yellow flying.png" alt="birds" class="pc yellow2 contact-bird">
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="footer-container">
+            <ul class="footer-links">
+            <li class="p-accordion">
+                <h4 role="button" onClick="accordionModule.toggleMenu('accordion-about')" class="lang-ja">サイトマップ</h4>
+                <h4 role="button" onClick="accordionModule.toggleMenu('accordion-about')" class="lang-en invisible-en">SITEMAP</h4>
+                <input type="checkbox" id="accordion-about"/>
+                <label for="accordion-about"></label>
+                <ul class="accordion_items">
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#services">SERVICES</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </li>
+            <li class="p-accordion">
+                <h4 role="button" onClick="accordionModule.toggleMenu('accordion-works')" class="lang-ja">制作実績一覧</h4>
+                <h4 role="button" onClick="accordionModule.toggleMenu('accordion-works')" class="lang-en invisible-en">WORKS</h4>
+                <input type="checkbox" id="accordion-works"/>
+                <label for="accordion-works"></label>
+                <ul class="accordion_items2">
+                    <a href="restaurant-suggest.html">
+                        <li class="lang-ja">今日のご飯診断</li>
+                        <li class="lang-en invisible-en">What to Eat Today</li>
+                    </a>
+                    <a href="tanakakensetsu.html">
+                        <li class="lang-ja">仮想企業サイト</li>
+                        <li class="lang-en invisible-en">Non-existent Construction Corporate Website</li>
+                    </a>
+                    <a href="portfolio.html">
+                        <li class="lang-ja">ポートフォリオサイト</li>
+                        <li class="lang-en invisible-en">My Portfolio Site</li>
+                    </a>
+                    <a href="Wake-up-time-checker.html">
+                        <li class="lang-ja">適正起床時間チェッカー</li>
+                        <li class="lang-en invisible-en">Wake-up Time Checker</li>
+                    </a>
+                </ul>
+            </li>
+            <li class="icon footer-icon">
+                <a href="https://github.com/Nhira921" target="/blank"><i class="fab fa-github-square"></i></a>
+                <a href="contact.html"><i class="far fa-envelope"></i></a>
+            </li>
+            </ul>
+            <div class="footer-bottom">
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="privacypolicy.html" class="lang-ja">プライバシーポリシー</a>
+                        <a href="privacypolicy.html" class="lang-en invisible-en">Privacy policy</a>
+                    </li>
+                    <li>@ 2020 name</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/birdAnime.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/language.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>  AOS.init();</script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.14.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.5/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+
+</body>
+</html>
